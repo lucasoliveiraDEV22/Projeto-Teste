@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Mynerve&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+
+  <title>WebRadio-Rock-80</title>
+</head>
+
+<body>
+
+  <header class="logo">
+    <div class="faixa">
+      <div class="logo-image">
+        <nav>
+          <ul class="list-nav">
+            <li><a>Home</a></li>
+            <li><a>Sobre</a></li>
+            <li><a>Videos</a></li>
+            <li><a>Contato</a></li>
+          </ul>
+        </nav>
+        <img src="./assets/Logo-Resistência-Rock.png" alt="Resistência-Logo" class="Resistência" />
+      </div>
+      <div>
+        <img src="./assets/microfone.png" alt="microfone-logo" class="microfone-class" />
+      </div>
+      <!-- <div>
+          <img
+            src="./assets/Guitarra-FlyingV.png"
+            alt="guitarra-logo"
+            class="guitar"
+          />
+        </div> -->
+    </div>
+  </header>
+  <section>
+    <div class="background-player">
+      <!--OnlineRadioBox Player widget-->
+      <div class="div-player">
+        <div class="orbP" id="orb_player_1a8bd76bcc44763a" vlm="0.8">
+          <style media="screen">
+            /* General */
+            .orbP {
+              position: relative;
+              box-sizing: border-box;
+              overflow: hidden;
+              font-weight: normal;
+              border: 1px solid transparent;
+              user-select: none;
+              text-align: left;
+              top: 83px;
+              left: 400px;
+              width: 950px;
+              height: 80px;
+              z-index: 250;
+            }
+
+            .orbP br,
+            .orbP>br {
+              display: none !important;
+            }
+
+            .orbP p,
+            .orbP>p {
+              margin: 0 !important;
+              padding: 0 !important;
+              line-height: normal !important;
+              font-size: inherit !important;
+            }
+
+            .orbPh {
+              display: block;
+              position: absolute;
+              z-index: 100;
+              top: 50%;
+              margin-top: -12px !important;
+              right: 10px;
+              width: 21px !important;
+              text-decoration: none !important;
+              cursor: pointer;
+            }
+
+            .orbPh>img {
+              margin: 0 !important;
+              border: none;
+              height: 24px !important;
+              -webkit-filter: drop-shadow(2px 2px 0 rgba(47, 99, 160, 0.2));
+              filter: drop-shadow(2px 2px 0 rgba(47, 99, 160, 0.2));
+            }
+
+            .orbPt {
+              text-decoration: none !important;
+            }
+
+            .orbPti {
+              float: left;
+              margin: 0 10px 0 0 !important;
+              vertical-align: top !important;
+              height: 75px !important;
+              width: 110px !important;
+              border: none !important;
+              border-radius: 2px !important;
+              opacity: 1 !important;
+            }
+
+            .orbPtn {
+              padding: 10px;
+              display: block;
+              margin-right: 52px;
+              line-height: 24px !important;
+              font-size: 25px !important;
+              font-weight: bold !important;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+
+            .orbPtt {
+              display: block;
+              margin-right: 52px;
+              text-decoration: none !important;
+              line-height: 24px !important;
+              font-size: 12px !important;
+              opacity: 0.85;
+              transition: opacity 0.2s;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+
+            .orbPtt:hover {
+              opacity: 1;
+            }
+
+            .orbPp,
+            .orbPs {
+              float: left !important;
+              margin: 0 10px 0 0 !important;
+              padding: 0 !important;
+              height: 48px !important;
+              width: 48px !important;
+              line-height: 48px !important;
+              border-radius: 2px !important;
+              border: none !important;
+              text-align: center !important;
+              cursor: pointer;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none !important;
+            }
+
+            .orbPp::before,
+            .orbPs::before {
+              display: inline-block;
+              vertical-align: middle;
+              content: "";
+              width: 0;
+              height: 0;
+              border-style: solid;
+            }
+
+            .orbPp::before {
+              border-width: 16px 0 16px 26px;
+            }
+
+            .orbPs::before {
+              border-width: 16px;
+            }
+
+            .orbPp:hover,
+            .orbPs:hover {
+              -webkit-transform: scale(1.087);
+              transform: scale(1.087);
+            }
+
+            .orbPhc {
+              position: relative !important;
+              box-sizing: border-box !important;
+              padding: 10px !important;
+              overflow: hidden;
+            }
+
+            /* Playlist */
+            .orbPpl {
+              position: relative;
+              overflow: auto;
+              overflow-x: hidden;
+              overflow-y: auto;
+              margin: 0 !important;
+              padding: 0 !important;
+              list-style: none !important;
+            }
+
+            .orbPpli {
+              box-sizing: border-box;
+              margin: 0 !important;
+              padding: 0 10px !important;
+              list-style: none !important;
+              background-image: none;
+              float: none !important;
+              height: auto !important;
+            }
+
+            .orbPpli>a,
+            .orbPpli>span {
+              display: block !important;
+              padding: 0 !important;
+              margin: 0 !important;
+              height: auto !important;
+              font-weight: normal !important;
+              text-decoration: none !important;
+              line-height: 32px !important;
+              font-size: 14px !important;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              transition: color 0.125s;
+              border: none !important;
+            }
+
+            .orbPpli>a:hover,
+            .orbPpli>span:hover {
+              background: transparent !important;
+            }
+
+            .orbPpli>a>time,
+            .orbPpli>span>time {
+              display: inline-block;
+              font-size: 12px !important;
+              width: 3em !important;
+            }
+
+            .orbPpli+li {
+              border-style: solid !important;
+              border-width: 1px 0 0 !important;
+            }
+
+            /* Volume */
+            .orbV {
+              position: absolute;
+              z-index: 2 !important;
+              width: 24px !important;
+              right: 48px !important;
+              top: 0 !important;
+              bottom: 0 !important;
+              line-height: 1 !important;
+              overflow: hidden !important;
+              transition: width 0.3s;
+            }
+
+            .orbV:hover {
+              width: 160px !important;
+            }
+
+            .orbVC {
+              position: absolute !important;
+              height: 18px !important;
+              left: 24px !important;
+              top: 50% !important;
+              margin: -9px 0 0 11px !important;
+            }
+
+            .orbVC::after {
+              display: block;
+              content: "";
+              margin-top: 4px;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 4px 100px 4px 0;
+              opacity: 0.33;
+            }
+
+            .orbVCs {
+              position: absolute !important;
+              z-index: 2 !important;
+              top: 0 !important;
+              width: 18px !important;
+              height: 18px !important;
+              border-radius: 50% !important;
+              cursor: ew-resize !important;
+              box-shadow: 0 6px 8px -2px rgba(0, 9, 18, 0.36);
+            }
+
+            .orbVb {
+              position: absolute !important;
+              width: 24px !important;
+              height: 24px !important;
+              top: 50% !important;
+              left: 0 !important;
+              margin-top: -12px;
+              white-space: nowrap !important;
+              cursor: pointer;
+              transition: opacity 0.3s;
+            }
+
+            .orbVb::before {
+              display: inline-block;
+              content: "";
+              vertical-align: middle;
+              width: 7px;
+              height: 12px;
+            }
+
+            .orbVb::after {
+              display: inline-block;
+              content: "";
+              vertical-align: middle;
+              border-width: 12px 12px 12px 0;
+              border-style: solid;
+              height: 0;
+              width: 0;
+              margin-left: -6px;
+            }
+
+            .orbV:hover .orbVb {
+              opacity: 0.33 !important;
+              cursor: default;
+            }
+
+            .orbVb>._m {
+              display: block !important;
+              width: 7px !important;
+              height: 18px !important;
+              position: absolute !important;
+              top: 50%;
+              margin-top: -9px !important;
+              right: 0;
+              overflow: hidden !important;
+            }
+
+            .orbVb>._m::before {
+              display: block;
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 50%;
+              width: 28px;
+              height: 24px;
+              margin-top: -12px;
+              border: 1px solid;
+              border-radius: 50%;
+            }
+
+            .orbVb>._m::after {
+              display: block;
+              content: "";
+              position: absolute;
+              right: 4px;
+              top: 50%;
+              width: 14px;
+              height: 14px;
+              margin-top: -7px;
+              border: 1px solid;
+              border-radius: 50%;
+            }
+
+            /* Flags*/
+            .orbF {
+              padding: 0 0 10px 10px !important;
+              border-top: 1px solid;
+              display: -ms-flexbox;
+              display: -webkit-box;
+              display: flex;
+              -ms-flex-flow: row nowrap !important;
+              flex-flow: row nowrap !important;
+            }
+
+            .orbFl {
+              margin: 0 !important;
+              padding: 0 !important;
+              list-style: none !important;
+            }
+
+            .orbFli,
+            .orbFh {
+              display: inline-block !important;
+              vertical-align: top !important;
+              line-height: 18px !important;
+              white-space: nowrap !important;
+              margin: 10px 7px 0 0 !important;
+              padding: 0 6px 0 0 !important;
+              text-indent: 0 !important;
+              list-style: none !important;
+              font-size: 11px !important;
+              text-align: right;
+            }
+
+            .orbFlif {
+              float: left !important;
+              width: 27px !important;
+              height: 18px !important;
+              margin-right: 5px !important;
+            }
+
+            .orbFhi {
+              position: relative !important;
+              display: inline-block !important;
+              vertical-align: baseline !important;
+              width: 8px !important;
+              height: 9px !important;
+              margin: 0 8px 0 5px !important;
+              border-style: solid !important;
+              border-width: 2px 1px 0 1px !important;
+              border-radius: 5px 5px 0 0 !important;
+              opacity: 0.5;
+            }
+
+            .orbFhi::before,
+            .orbFhi::after {
+              display: block;
+              content: "";
+              position: absolute;
+              bottom: -2px;
+              width: 0;
+              height: 3px;
+              border-style: solid;
+              border-width: 2px;
+              border-radius: 3px;
+            }
+
+            .orbFhi::before {
+              left: -4px;
+            }
+
+            .orbFhi::after {
+              right: -4px;
+            }
+
+            /* Multiselect */
+            .orbPm {
+              margin: 0 !important;
+              padding: 0 !important;
+              list-style: none !important;
+            }
+
+            .orbPmi {
+              position: relative;
+              margin: 0 !important;
+              padding: 10px !important;
+              list-style: none !important;
+              border: dotted rgba(204, 204, 204, 0.5);
+              border-width: 1px 0 0;
+              font-size: 12px !important;
+              overflow: hidden;
+              white-space: nowrap;
+              line-height: 1 !important;
+              cursor: pointer;
+            }
+
+            .orbPmi::before {
+              display: block;
+              content: "";
+              position: absolute;
+              z-index: 1;
+              top: 50%;
+              right: 10px;
+              margin-top: -8px;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 8px 0 8px 13px;
+              opacity: 0.5;
+              filter: alpha(opacity=50);
+              transition: opacity 0.2s;
+            }
+
+            .orbPmi:hover::before {
+              opacity: 1;
+              filter: alpha(opacity=100);
+            }
+
+            .orbPmi::after {
+              display: block;
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              width: 36px;
+            }
+
+            .orbPmii {
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 10px;
+              width: 30px;
+              height: 16px;
+              border: none !important;
+              border-radius: 2px !important;
+            }
+
+            .orbPmin {
+              display: inline-block;
+              vertical-align: middle;
+            }
+
+            /* Compact General */
+            .cmpct .orbPti {
+              height: 24px !important;
+              width: 44px !important;
+            }
+
+            .cmpct .orbPtn {
+              line-height: 12px !important;
+              font-size: 12px !important;
+            }
+
+            .cmpct .orbPtt {
+              line-height: 12px !important;
+              font-size: 10px !important;
+            }
+
+            .cmpct .orbPp,
+            .cmpct .orbPs {
+              height: 24px !important;
+              width: 24px !important;
+              line-height: 24px !important;
+            }
+
+            .cmpct .orbPp::before {
+              border-width: 8px 0 8px 13px !important;
+            }
+
+            .cmpct .orbPs::before {
+              border-width: 8px !important;
+            }
+
+            /* Compact w/Playlist */
+            .cmpct .orbPpli>a,
+            .cmpct .orbPpli>span {
+              line-height: 24px !important;
+              font-size: 12px !important;
+            }
+
+            .cmpct .orbPpli>a>time,
+            .cmpct .orbPpli>span>time {
+              font-size: 11px !important;
+            }
+          </style>
+          <style media="screen" id="orb_player_1a8bd76bcc44763a_settings">
+            .orbP {
+              background-color: #000000e7 !important;
+            }
+
+            /*common player background*/
+            .orbP {
+              border-style: solid;
+              border-color: #2f63a0 !important;
+              border-radius: 5px;
+            }
+
+            /*common player container border,
+    radius,
+    width*/
+            .orbPp,
+            .orbPs {
+              background: #fafafa !important;
+            }
+
+            /*buttons play/stop bg*/
+            .orbPp::before {
+              border-color: transparent transparent transparent #000000e7 !important;
+            }
+
+            /* play button color */
+            .orbPs::before {
+              border-color: #000000e7 !important;
+            }
+
+            /* stop button color */
+            .orbPtn,
+            .orbPtt {
+              color: #fafafa;
+              text-shadow: #e60f0f solid 1px;
+            }
+
+            .orbPtt:hover {
+              color: #000000e7 !important;
+            }
+
+            /*station name & track link color*/
+            .orbV {
+              background-color: #e60f0f !important;
+              box-shadow: 0 0 32px 32px #e60f0f !important;
+            }
+
+            /*volume control color */
+            .orbVC::after,
+            .orbVb::after {
+              border-color: transparent #fafafa transparent transparent !important;
+            }
+
+            .orbVb::before,
+            .orbVCs {
+              background: #fafafa !important;
+            }
+
+            /* volume bg color */
+            .orbVb>._m::before,
+            .orbVb>._m::after {
+              border-color: #fafafa !important;
+            }
+          </style>
+          <div class="orbPhc">
+            <audio id="orb_player_1a8bd76bcc44763a_p" crossorigin="true" style="
+                  width: 1px;
+                  height: 1px;
+                  overflow: hidden;
+                  position: absolute;
+                "></audio>
+
+            <button class="orbPp" title="Ao Vivo" country="br" alias="resistenciarock" stream="1"
+              autoplay="autoplay"></button>
+            <a class="orbPt" href="https://onlineradiobox.com/br/resistenciarock/" target="_blank">
+              <img class="orbPti" src="//us0-cdn.onlineradiobox.com/img/l/3/109433.v11.png"
+                alt="Resistência ROCK WebRadio" />
+              <span class="orbPtn">Resistência ROCK WebRadio</span>
+            </a>
+            <span class="orbPtt" loading="carregando" playing="tocando" error="erro de reprodução"
+              not_supported="this browser can't play it" external="Escute agora (abre no player pop-up)"
+              geo_blocked="Indisponível em seu país"></span>
+            <div class="orbV">
+              <div class="orbVb"><i class="_m"></i></div>
+              <div class="orbVC">
+                <div class="orbVCs" style="left: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            var orbp_w = orbp_w || { lang: "pt-pt" };
+            orbp_w.cmd = orbp_w.cmd || [];
+            orbp_w.apiUrl = "https://onlineradiobox.com";
+            orbp_w.cmd.push(function () {
+              orbp_w.init("orb_player_1a8bd76bcc44763a");
+            });
+            var s, t;
+            s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//ecdn.onlineradiobox.com/js/pwidget2.min.235ca64e.js";
+            t = document.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(s, t);
+          </script>
+        </div>
+      </div>
+      <!--OnlineRadioBox Player widget-->
+    </div>
+    <div class="container">
+      <div class="container-cards">
+        <div class="cards">
+          <a href="https://www.youtube.com/playlist?list=PLDm5wwyrZwUFao6-s5eiE7zTKLoN2Kdku" target="_blank">
+            <div>
+              <img src="./assets/concert.jpg" alt="concert" />
+              <h2>Hoje na História do Heavy Metal</h2>
+
+              <p class="paragraph-style">A Timeline do HM</p>
+            </div>
+          </a>
+        </div>
+        <a href="https://edson-araujo.wixsite.com/edsonaraujo/sobre" target="_blank">
+          <div class="cards">
+            <img src="./assets/Imagem-radialista.jpg" alt="radialista" />
+            <h2>Sobre</h2>
+
+            <p class="paragraph-style">Saiba quem está por trás</p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLDm5wwyrZwUH4lkVUGckcb53s-tJT4Yv7" target="_blank">
+          <div class="cards">
+            <img src="./assets/Músico.jpg" alt="músico" />
+            <h2>Metal Drops</h2>
+
+            <p class="paragraph-style">Notícias atualizadas diariamente</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="section-video">
+    <div class="video-card">
+      <a href="https://www.youtube.com/watch?v=v-BCnwFu6bY" target="_blank">
+        <img src="./assets/logo-guitarra.jpeg" alt="logo-pagina" class="img-video" />
+        <h2>Resistência ROCK! chegou para cortar o barato do jabá</h2>
+        <p>Diga NÃO ao jabá nas rádios!</p>
+      </a>
+    </div>
+
+    <div class="video-card">
+      <a href="https://www.youtube.com/watch?v=tvTMLbF_c3g" target="_blank">
+        <img src="./assets/Artillery-logo.jpeg" alt="Artillery-logo" class="img-video" />
+        <h2>O que está rolando</h2>
+        <p>Bandas + pedidas</p>
+      </a>
+    </div>
+    <div class="video-card">
+      <a href="https://www.youtube.com/watch?v=OFxg1nB9yQ8" target="_blank">
+        <img src="./assets/Van Halen-logo.jpeg" alt="Van Halen-logo" class="img-video" />
+        <h2>Álbum clássico</h2>
+        <p>A espinha dorsal do Metal</p>
+      </a>
+    </div>
+    <div class="video-card">
+      <a href="https://www.youtube.com/watch?v=QF_qb4EyroM&t=172s" target="_blank">
+        <img src="./assets/logo-guitarra.jpeg" alt="logo-pagina" class="img-video" />
+        <h2>Metal Drops especial:</h2>
+        <p>
+          Heavy Metal é o gênero musical predominante nas plataformas digitais
+          <br />
+          by Edson Araujo
+        </p>
+      </a>
+    </div>
+  </section>
+  <div class="fundo">
+    <h2>Os grandes clássicos de todos os tempos e o tempo todo 24/7!</h2>
+    <p>Os álbuns consagrados pela grande nação do Metal!</p>
+    <br>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+          aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+          aria-label="Slide 10"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+          aria-label="Slide 11"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
+          aria-label="Slide 12"></button>
+      </div>
+      <div class="carousel-inner" style="height: 30em">
+        <div class="carousel-item h-100 active"
+          style="background: url(assets/Ultimate-Sin.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100"
+          style="background: url(assets/Def\ Leppard-Pyromania.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100" style="background: url(assets/Bon\ Jovi.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100"
+          style="background: url(assets/Iron\ Maiden\ -\ Killers.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100" style="background: url(assets/icon.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100" style="background: url(assets/Savatage.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100" style="background: url(assets/Twisted\ Sister.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100"
+          style="background: url(assets/Motley\ Crue\ -\ Too\ Fast.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100"
+          style="background: url(assets/motorhead\ -\ overkill.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100"
+          style="background: url(assets/Cinderella-NightSongs.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100"
+          style="background: url(assets/Yngwie\ Malmsteen-RisingForce.jpg) center/contain no-repeat;">
+
+        </div>
+        <div class="carousel-item h-100" style="background: url(assets/Metal\ Church.jpg) center/contain no-repeat;">
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+
+      </button>
+
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
